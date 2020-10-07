@@ -14,7 +14,7 @@ type PackageJsonWorkspaces = {
     | string[];
 };
 
-function getYarnWorkspaceRoot(cwd: string): string {
+export function getYarnWorkspaceRoot(cwd: string): string {
   const yarnWorkspacesRoot = findWorkspaceRoot(cwd);
 
   if (!yarnWorkspacesRoot) {
